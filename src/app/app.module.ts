@@ -8,9 +8,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { DataService } from './shared/data.service';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, HttpModule, AppRoutingModule ],
-  declarations: [ AppComponent, AppRoutingModule.components ],
-  providers:    [ DataService ],
-  bootstrap:    [ AppComponent ]
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    AppRoutingModule
+  ],
+  declarations: [
+    AppComponent,
+    AppRoutingModule.components
+  ],
+  providers: [DataService],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
